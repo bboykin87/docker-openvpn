@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#
+# Build a root certificate
+# Changed from original script by removing flag to run pkitool interactively (--interact)
+
+export EASY_RSA="${EASY_RSA:-.}"
+"$EASY_RSA/pkitool" --initca $* 
