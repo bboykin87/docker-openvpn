@@ -10,7 +10,8 @@ COPY pkitool /
 
 ENV KEY_NAME="change me"
 ENV KEY_OU="change me"
-ENV KEY_ORG=$KEY_OU # If you need these different then add ENV KEY_OU on another line and set this to what you want
+# If you need these different then add ENV KEY_OU on another line and set this to what you want
+ENV KEY_ORG=$KEY_OU
 ENV EASY_RSA=/etc/easy-rsa-old-2.3.3/easy-rsa/2.0
 ENV PKCS_PATH=/usr/bin/pkcs11-tool
 
