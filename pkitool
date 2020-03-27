@@ -139,7 +139,7 @@ NODES_P12=""
 BATCH="-batch"
 CA="ca"
 # must be set or errors of openssl.cnf
-PKCS11_MODULE_PATH=$PKCS_PATH
+PKCS11_MODULE_PATH="/usr/bin/pkcs11-tool"
 PKCS11_PIN="1234"
 
 # Process options
