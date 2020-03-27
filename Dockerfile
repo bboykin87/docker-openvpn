@@ -30,7 +30,7 @@ mv build-key-server /etc/easy-rsa-old-2.3.3/easy-rsa/2.0/build-key-server && \
 mv vars /etc/easy-rsa-old-2.3.3/easy-rsa/2.0/vars && \
 mv build-ca /etc/easy-rsa-old-2.3.3/easy-rsa/2.0/build-ca && mv server.conf /etc/openvpn/server.conf && \
 mv /etc/easy-rsa-old-2.3.3/easy-rsa/2.0/openssl-1.0.0.cnf /etc/easy-rsa-old-2.3.3/easy-rsa/2.0/openssl.cnf && \
-cd /etc/easy-rsa-old-2.3.3/easy-rsa/2.0/ && chmod +x vars build-key-server pkitool build-key && . ./vars && \
+cd /etc/easy-rsa-old-2.3.3/easy-rsa/2.0/ && chmod +x vars build-ca clean-all build-key-server pkitool build-key && . ./vars && \
 ./clean-all && \
 ./build-ca && \
 ./build-key-server "$KEY_NAME" && \
